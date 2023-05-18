@@ -10,7 +10,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        screenOptions={{ headerShown: true, tabBarHideOnKeyboard: true }}
+        screenOptions={{ headerShown: false, tabBarHideOnKeyboard: true }}
       >
         <Stack.Screen name="Welcome" component={Home} />
         <Stack.Screen name="Settings" component={Settings} />

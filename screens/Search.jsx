@@ -1,10 +1,16 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TextInput } from "react-native";
 import React from "react";
+import Topbar from "../components/Topbar";
 
 const Search = () => {
   return (
     <View style={styles.container}>
-      <Text>Search</Text>
+      <View>
+        <Topbar heading="Search" />
+      </View>
+      <View>
+        <TextInput style={styles.searchbar} placeholder="Find word synonyms" />
+      </View>
     </View>
   );
 };
@@ -15,8 +21,13 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
     flex: 1,
-    alignItems: "center",
-    // justifyContent: "center",
-    padding: 20,
+  },
+  searchbar: {
+    margin: 20,
+    padding: 10,
+    height: 44,
+    borderColor: "silver",
+    borderWidth: 1,
+    borderRadius: 15,
   },
 });

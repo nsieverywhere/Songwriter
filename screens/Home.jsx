@@ -20,7 +20,9 @@ function Homescreen() {
   return <Homepage />;
 }
 
-function Tapescreen() {}
+function Tapescreen() {
+  return <Homepage />;
+}
 
 function Metronomescreen() {}
 
@@ -73,7 +75,6 @@ const Home = () => {
         name="Home"
         component={Homescreen}
       />
-
       <Tab.Screen
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -83,6 +84,7 @@ const Home = () => {
         name="Search"
         component={Searchscreen}
       />
+
       <Tab.Screen
         options={{
           tabBarIcon: ({ color, size }) => (
